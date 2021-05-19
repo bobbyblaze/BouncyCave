@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cave_skins">
+
+
+    <Button
+        android:id="@+id/backArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/arrow"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minerButton"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/outline_player_selected"
+        app:layout_constraintEnd_toStartOf="@id/smilieButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/miner"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/miner"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@id/minerButton"
+        app:layout_constraintStart_toStartOf="@id/minerButton"
+        app:layout_constraintTop_toTopOf="@id/minerButton" />
+
+    <TextView
+        android:id="@+id/nameSmilie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/call421"
+        android:text="Miner"
+        app:layout_constraintEnd_toEndOf="@id/miner"
+        app:layout_constraintStart_toStartOf="@id/miner"
+        app:layout_constraintTop_toBottomOf="@id/miner" />
+
+    <Button
+        android:id="@+id/smilieButton"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/outline_player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/minerButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/smilie"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/smilie"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@id/smilieButton"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@id/smilieButton"
+        app:layout_constraintTop_toTopOf="@id/smilieButton" />
+
+    <TextView
+        android:id="@+id/nameFetak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/call421"
+        android:text="Smilie"
+        app:layout_constraintEnd_toEndOf="@id/smilie"
+        app:layout_constraintStart_toStartOf="@id/smilie"
+        app:layout_constraintTop_toBottomOf="@id/smilie" />
+
+    <ImageView
+    android:id="@+id/czech"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/cehun"
+    android:scaleType="fitCenter"
+    app:layout_constraintEnd_toEndOf="@id/czechButton"
+    app:layout_constraintHorizontal_bias="0.466"
+    app:layout_constraintStart_toStartOf="@id/czechButton"
+    app:layout_constraintTop_toTopOf="@id/czechButton" />
+
+    <Button
+        android:id="@+id/czechButton"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/outline_player"
+        app:layout_constraintEnd_toEndOf="@+id/smilieButton"
+        app:layout_constraintTop_toBottomOf="@+id/smilieButton" />
+
+    <TextView
+        android:id="@+id/nameCehun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/call421"
+        android:text="Czech"
+        app:layout_constraintEnd_toEndOf="@id/czech"
+        app:layout_constraintStart_toStartOf="@id/czech"
+        app:layout_constraintTop_toBottomOf="@id/czech" />
+
+    <ImageView
+        android:id="@+id/sk"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sk"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@id/skButton"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@id/skButton"
+        app:layout_constraintTop_toTopOf="@id/skButton" />
+
+    <Button
+        android:id="@+id/skButton"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/outline_player"
+        app:layout_constraintStart_toStartOf="@+id/minerButton"
+        app:layout_constraintTop_toBottomOf="@id/minerButton" />
+
+    <TextView
+        android:id="@+id/nameSk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/call421"
+        android:text="Slovak"
+        app:layout_constraintEnd_toEndOf="@id/sk"
+        app:layout_constraintStart_toStartOf="@id/sk"
+        app:layout_constraintTop_toBottomOf="@id/sk" />
+
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cat"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@id/catButton"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@id/catButton"
+        app:layout_constraintTop_toTopOf="@id/catButton" />
+
+    <Button
+        android:id="@+id/catButton"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/outline_player"
+        app:layout_constraintStart_toStartOf="@+id/skButton"
+        app:layout_constraintTop_toBottomOf="@+id/skButton" />
+
+    <TextView
+        android:id="@+id/nameYoda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/call421"
+        android:text="Mnau"
+        app:layout_constraintEnd_toEndOf="@id/cat"
+        app:layout_constraintStart_toStartOf="@id/cat"
+        app:layout_constraintTop_toBottomOf="@id/cat" />
+
+    <ImageView
+        android:id="@+id/yoda"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/yoda"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@id/yodaButton"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@id/yodaButton"
+        app:layout_constraintTop_toTopOf="@id/catButton" />
+
+    <Button
+        android:id="@+id/yodaButton"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/outline_player"
+        app:layout_constraintStart_toStartOf="@+id/czechButton"
+        app:layout_constraintTop_toBottomOf="@+id/czechButton" />
+
+    <TextView
+        android:id="@+id/nameCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/call421"
+        android:text="Grogu"
+        app:layout_constraintEnd_toEndOf="@id/yoda"
+        app:layout_constraintStart_toStartOf="@id/yoda"
+        app:layout_constraintTop_toBottomOf="@id/yoda" />
+
+    <TextView
+        android:id="@+id/standartSkinTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/call421"
+        android:text="Standart Skins"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

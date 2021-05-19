@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cave_menusett">
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="160dp"
+        android:src="@drawable/coming_soon_tab"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/play_gif"
+        app:layout_constraintStart_toStartOf="@+id/play_gif"
+        app:layout_constraintTop_toBottomOf="@+id/skins" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/play_gif"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:src="@drawable/play_button_gif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="@+id/play_gif"
+        app:layout_constraintEnd_toEndOf="@+id/play_gif"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/play_gif"
+        app:layout_constraintTop_toTopOf="@+id/play_gif"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/kolecko"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/skins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/players_levels"
+        android:fontFamily="@font/call421"
+        android:text="Skins"
+        android:textColor="#999999"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/play_gif"
+        app:layout_constraintStart_toEndOf="@+id/smiley"
+        app:layout_constraintTop_toBottomOf="@+id/play_gif" />
+
+    <Button
+        android:id="@+id/smileSkins"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/smiley"
+        app:layout_constraintEnd_toStartOf="@+id/skins"
+        app:layout_constraintStart_toStartOf="@+id/smiley"
+        app:layout_constraintTop_toTopOf="@+id/smiley" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/smiley"
+        android:layout_width="48dp"
+        android:layout_height="@id/skins"
+        android:src="@drawable/smiley"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/skins"
+        app:layout_constraintEnd_toStartOf="@id/skins"
+        app:layout_constraintStart_toStartOf="@+id/play_gif"
+        app:layout_constraintTop_toTopOf="@+id/skins"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

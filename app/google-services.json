@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492545321541",
+    "firebase_url": "https://bouncy-ed561.firebaseio.com",
+    "project_id": "bouncy-ed561",
+    "storage_bucket": "bouncy-ed561.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492545321541:android:9d5735885dedec0a35d12c",
+        "android_client_info": {
+          "package_name": "com.e.bouncy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492545321541-ffcf2tskhohof98atjqlc9qe6vboq1l5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.bouncy",
+            "certificate_hash": "ee07b61f612551f9f583a8bf023ab8ed1b5b8c9a"
+          }
+        },
+        {
+          "client_id": "492545321541-s59kbdpig270ksacrs7ooqha0f82gmdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFDPsyDtIxk4iNh_u88rS5QffbrU793w4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492545321541-s59kbdpig270ksacrs7ooqha0f82gmdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
